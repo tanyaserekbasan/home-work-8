@@ -1,0 +1,219 @@
+:root {
+  --text-color: #004f79;
+  --bg-color: #a3d0e8c4;
+  --main-bg-color: rgba(245, 245, 220, 0.63);
+  --link-color: rgb(90, 72, 251);
+  --header-border-color: 10px solid skyblue;
+  --accent-color: #1637bb;
+  --footer-border-color: rgb(14, 82, 109);
+  --about-color: #6f0a68;
+  --goals-color: #863607;
+  --goals-bg-color: #088d13;
+  --placeholder-color: #888888;
+  --input-color: #9c4dc1;
+  --bottom-border-color: #61385e;
+}
+
+a:link {
+  text-decoration: none;
+  color: var(--link-color);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+ul {
+  list-style-position: inside;
+  list-style-image: url("../images/star.svg");
+}
+
+main {
+  padding: 40px 0px;
+  margin: 30px 0;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--text-color);
+  background-image: url("../images/background-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 40px;
+}
+
+.container {
+  max-width: 1400px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header,
+footer {
+  background-color: var(--bg-color);
+  text-align: center;
+}
+
+header {
+  border: var(--header-border-color);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+section p {
+  margin: 15px;
+}
+
+.hobbies-list,
+.goals-list {
+  padding-left: 20px; /* Відступ зліва для списків */
+  margin-top: 10px;
+}
+
+.hobbies-list li,
+.goals-list li {
+  margin-bottom: 6px;
+}
+
+footer {
+  border: 10px solid var(--footer-border-color);
+  padding: 30px;
+  margin-top: 50px;
+}
+
+header > h1 {
+  color: var(--accent-color);
+}
+
+main {
+  background-color: var(--main-bg-color);
+}
+
+main h2 {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+main h2::first-letter {
+  font-size: 40px;
+}
+
+h2 + p {
+  font-weight: bold;
+}
+
+.about {
+  color: var(--about-color);
+  text-align: right;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hobbies-list li:first-child,
+.hobbies-list li:nth-child(3) {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#goals {
+  color: var(--goals-color);
+  background-color: var(--goals-bg-color);
+}
+
+/* цей селектор має найбільшу специфічність - (1, 2, 1) */
+#goals .goals-list li:first-child {
+  font-style: italic;
+  color: yellow;
+}
+
+.head-form {
+  text-align: center;
+}
+
+.head-form::before {
+  content: "★";
+  color: var(--accent-color);
+}
+
+.head-form::after {
+  content: "★";
+  color: var(--accent-color);
+}
+
+.data > label:first-of-type {
+  color: var(--accent-color);
+}
+
+input,
+textarea {
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: var(--placeholder-color);
+  font-style: italic;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color: var(--input-color);
+}
+
+.click {
+  background: linear-gradient(#eeff6a, #861abd);
+}
+
+.click:hover,
+.click:focus {
+  outline: none;
+  border: 2px solid var(--bottom-border-color);
+  border-radius: 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid var(--accent-color);
+}
+
+th {
+  text-align: center;
+}
+
+.without-border-bottom {
+  border-bottom: none;
+}
+
+.without-border-top {
+  border-top: none;
+}

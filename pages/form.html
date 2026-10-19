@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Анкета для зворотнього звʼязку</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="./tables.html">Таблиці</a></li>
+          <li><a href="#form">Перейти до форми</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="form">
+        <h2 class="head-form">Реєстрація користувача</h2>
+        <p>Будь ласка, заповніть форму нижче:</p>
+        <form>
+          <fieldset class="data">
+            <legend>Особисті дані</legend>
+
+            <label>
+              Імʼя:
+              <input type="text" name="firstname" />
+            </label>
+
+            <label>
+              Прізвище:
+              <input type="text" name="lastname" />
+            </label>
+
+            <label>
+              Електронна пошта:
+              <input
+                type="email"
+                name="email"
+                placeholder="example@gmail.com"
+              />
+            </label>
+
+            <label>
+              Номер телефону:
+              <input type="tel" name="phone" placeholder="+380XXXXXXXXX" />
+            </label>
+
+            <label>
+              Пароль:
+              <input type="password" name="password" />
+            </label>
+
+            <label>
+              Вік (років):
+              <input type="number" name="age" />
+            </label>
+
+            <fieldset>
+              <legend>Стать:</legend>
+              <label
+                ><input type="radio" name="sex" value="male" />Чоловіча</label
+              >
+              <label
+                ><input type="radio" name="sex" value="female" />Жіноча</label
+              >
+            </fieldset>
+          </fieldset>
+          <fieldset>
+            <legend>Локація та параметри</legend>
+
+            <label>
+              Оберіть місто
+              <select name="city">
+                <option value="kyiv">Київ</option>
+                <option value="odesa">Одеса</option>
+                <option value="lviv">Львів</option>
+                <option value="kharkiv">Харків</option>
+                <option value="dnipro">Дніпро</option>
+              </select>
+            </label>
+
+            <label>
+              Дата консультації
+              <input type="date" name="date-consultation" />
+            </label>
+
+            <label>
+              Час консультації
+              <input type="time" name="time-consultation" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Трохи про Вас</legend>
+
+            <label>
+              Оцінка знань/досвіду (від 1до 10)
+              <input
+                type="range"
+                name="experience-range"
+                min="1"
+                max="10"
+                value="5"
+              />
+            </label>
+
+            <label>
+              Улюблений колір:
+              <input type="color" name="user-color" />
+            </label>
+            <fieldset>
+              <legend>Оберіть теми, які Вас цікавлять:</legend>
+              <label
+                ><input type="checkbox" name="interests" value="design" />
+                Дизайн</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="interests"
+                  value="programming"
+                />Програмування</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="interests"
+                  value="marketing"
+                />Маркетинг</label
+              >
+            </fieldset>
+
+            <label>
+              Прикріпити своє резюме:
+              <input type="file" name="resume" />
+            </label>
+
+            <label>
+              Ваші запитання або коментарі:
+              <textarea name="comment" rows="4"></textarea>
+            </label>
+          </fieldset>
+          <label>
+            <input type="checkbox" name="deal" value="deal" />
+            Я погоджуюсь на обробку персональних даних
+          </label>
+          <button type="submit" class="click">Надіслати дані</button>
+          <button type="reset" class="click">Очистити форму</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <address>
+        <a href="mailto:tanyaserekbasan@gmail.com">tanyaserekbasan@gmail.com</a>
+        <a href="tel:+380682560183">+380682560183</a>
+      </address>
+      <p>&COPY; 2026 Анкета для зворотнього звʼязку</p>
+    </footer>
+  </body>
+</html>
