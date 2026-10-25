@@ -53,6 +53,7 @@ ol {
 
 section {
   padding: 20px 0;
+  background-color: var(--main-bg-color);
 }
 
 .container {
@@ -97,13 +98,13 @@ footer {
   padding: 30px 0;
 }
 
+address a:not(:last-child) {
+  margin-right: 40px;
+}
+
 header h1 {
   color: var(--accent-color);
   margin-bottom: 20px;
-}
-
-main {
-  background-color: var(--main-bg-color);
 }
 
 main h2 {
